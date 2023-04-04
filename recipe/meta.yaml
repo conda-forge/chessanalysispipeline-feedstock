@@ -1,5 +1,5 @@
 {% set name = "ChessAnalysisPipeline" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ChessAnalysisPipeline-{{ version }}.tar.gz
-  sha256: 42832aa9700c8e227aa8571f37deffef5c0fda3507c3dc8193fdb92310f8a166
+  sha256: 95a5032b563b8d337af6a4edd26e119720507ea2c48754c532327ebdc5f9ad85
 
 build:
   entry_points:
