@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@keara-soloway](https://github.com/keara-soloway/)
+* [@rolfverberg](https://github.com/rolfverberg/)
 
