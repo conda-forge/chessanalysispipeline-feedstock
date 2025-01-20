@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ChessAnalysisPipeline-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ChessAnalysisPipeline-{{ version }}.tar.gz
   sha256: fc1c2a1c476cba598acc62d70a777e23e51a4b9fc47a0576178aa98a43508ad5
 
 build:
@@ -14,14 +14,14 @@ build:
     - CHAP = CHAP.runner:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml
 
 test:
@@ -33,6 +33,7 @@ test:
     - CHAP --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/CHESSComputing/ChessAnalysisPipeline
