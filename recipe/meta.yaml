@@ -1,5 +1,6 @@
 {% set name = "ChessAnalysisPipeline" %}
 {% set version = "0.0.14" %}
+{% python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,10 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml
 
 test:
@@ -32,6 +34,7 @@ test:
     - pip check
     - CHAP --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
