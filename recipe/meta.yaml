@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ChessAnalysisPipeline-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/68/ac/2219eb926b235b2118352c1e7df17812131871cf4319bf9e6fb6c67808db/chessanalysispipeline-1.0.0.tar.gz
   sha256: 9e00ab59380798baad405f7e15e9f06bfd2386c7b0ea6344fea0adfee19cee79
 
 build:
