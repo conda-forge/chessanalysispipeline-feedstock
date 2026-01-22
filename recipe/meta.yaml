@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ChessAnalysisPipeline-{{ version }}.tar.gz
-  sha256: fc1c2a1c476cba598acc62d70a777e23e51a4b9fc47a0576178aa98a43508ad5
+  sha256: 9e00ab59380798baad405f7e15e9f06bfd2386c7b0ea6344fea0adfee19cee79
 
 build:
   entry_points:
