@@ -34,9 +34,9 @@ test:
     - pip check
     - CHAP --help
   requires:
-    - python {{ python_min }}
+    - python {{  }}
     - pip
-    - python {{ python_min }}
+    - python {{  }}
 
 about:
   home: https://github.com/CHESSComputing/ChessAnalysisPipeline
