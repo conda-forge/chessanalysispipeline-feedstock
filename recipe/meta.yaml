@@ -24,18 +24,22 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - numpy
+    - pydantic
     - pyyaml
 
 test:
   imports:
     - CHAP
-    - MLaaS
   commands:
     - pip check
     - CHAP --help
   requires:
     - python {{ python_min }}
     - pip
+    - numpy
+    - pydantic
+    - pyyaml
 
 about:
   home: https://github.com/CHESSComputing/ChessAnalysisPipeline
