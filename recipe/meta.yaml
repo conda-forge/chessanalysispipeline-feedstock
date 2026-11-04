@@ -1,6 +1,6 @@
 {% set name = "ChessAnalysisPipeline" %}
-{% set version = "2026.11.3" %}
-{% set python_min = "3.10" %}
+{% set version = "2026.11.03" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
