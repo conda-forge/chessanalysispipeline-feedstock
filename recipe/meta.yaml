@@ -1,5 +1,5 @@
 {% set name = "ChessAnalysisPipeline" %}
-{% set version = "2026.9.21" %}
+{% set version = "2026.11.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/51/6c/478dab08d35233d61379ca6e39062bd99f90d265f1c09112bd4916702ae6/chessanalysispipeline-{{ version }}.tar.gz
-  sha256: 151197aa3c2cbc3f2a0ed50563adbdffdb4e08df2ee342a06c438f61db8325a9
+  url: https://files.pythonhosted.org/packages/da/fe/82f1ff537eacd0569f1033211a4b8b56dea6bb3a1106b8d4f17c84cb9973/chessanalysispipeline-{{ version }}.tar.gz
+  sha256: 551a8eb467c9f2112a47c3048d5ce34e8b16b15ed4056bd960d5cead5d5f50b8
 
 build:
   entry_points:
